@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>memory game</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script defer src="app.js"></script>
+	<div id="set-table-size">
+		<p>Select a table size:</p>
+		<div>
+			<input type="radio" id="four" name="table-size" value="4" checked>
+			<label for="four">4x4</label>
+		</div>
+		<div>
+			<input type="radio" id="five" name="table-size" value="5">
+			<label for="five">5x5</label>
+		</div>
+		<div>
+			<input type="radio" id="six" name="table-size" value="6">
+			<label for="six">6x6</label>
+		</div>
+		<button id="start-game-button">Start game</button>
+	</div>
+	<div id="game-board"></div>
+</body>
+</html>

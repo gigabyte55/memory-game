@@ -1,0 +1,43 @@
+#game-board {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.table-row {
+	display: flex;
+	width: 100%;
+}
+
+.table-card {
+	background-color: gray;
+	cursor: pointer;
+	height: 90px;
+	margin: 5px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+	width: 90px;
+}
+
+.table-card p {
+	display: none;
+}
+
+.table-card.flip {
+	background-color: white;
+}
+
+.table-card.matched {
+	background-color: green;
+	cursor: default;
+}
+
+.table-card.flip p,
+.table-card.matched p {
+	display: inline;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
